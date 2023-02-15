@@ -13,7 +13,7 @@
           "id": "my-static-vite",
           "name": "My static vite site",
           "type": "static",
-          "buildCommand": "yarn build",
+          "buildCommand": "pnpm run build",
           "outputDirectory": "public",
           "singlePageApp": true
         }
