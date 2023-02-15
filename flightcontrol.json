@@ -1,0 +1,26 @@
+{
+  "$schema": "https://app.flightcontrol.dev/schema.json",
+  "environments": [
+    {
+      "id": "production",
+      "name": "Production",
+      "region": "us-west-2",
+      "source": {
+        "branch": "main"
+      },
+      "services": [
+        {
+          "id": "my-static-vite",
+          "name": "My static vite site",
+          "type": "static",
+          "buildCommand": "yarn build",
+          "outputDirectory": "public",
+          "singlePageApp": true
+        }
+      ],
+      "envVariables": {
+        "VITE_APP_API_URL": "https://example-api.com"
+      }
+    }
+  ]
+}
